@@ -1,0 +1,12 @@
+@if(loading){
+    <h5><i>Cargando...</i></h5>
+}@else{
+<h1>Nombre: {{alumno?.NOMBRE}}</h1>
+<h3>Materia: {{alumno?.MATERIA_ID}}</h3>
+<h3>Turno: {{alumno?.TURNO_ID}}</h3>
+<h3>Comision: {{alumno?.COMISION}}</h3>
+
+@if(alumno?.DEBE_CORRELATIVA) {
+    <h3>Debe correlativa: {{alumno?.DEBE_CORRELATIVA}}</h3>
+}
+}
