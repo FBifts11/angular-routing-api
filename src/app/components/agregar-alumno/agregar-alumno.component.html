@@ -1,1 +1,38 @@
-<p>agregar-alumno works!</p>
+<div class="container">
+    <form [formGroup]="miFormulario" (ngSubmit)="enviar()">
+
+        <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre y apellido</label>
+            <input type="text" class="form-control" id="nombre" formControlName="nombre">
+        </div>
+        <div class="mb-3">
+            <label for="materia_id" class="form-label">ID Materia</label>
+            <select class="form-control" id="materia_id" formControlName="materia_id">
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="turno_id" class="form-label">ID Turno</label>
+            <select class="form-control" id="turno_id" formControlName="turno_id">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </div>
+        <div class="'mb-3">
+            <label for="COMISION" class="form-label">Comision</label>
+            <select class="form-control" id="COMISION" formControlName="comision">
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="debe" class="form-label">Debe Correlativa </label>
+            <input type="checkbox" id="debe" formControlName="debe_correlativa">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Enviar datos</button>
+    </form>
+</div>
